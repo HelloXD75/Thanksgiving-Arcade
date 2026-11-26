@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanksgiving Arcade 🦃</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🦃 THANKSGIVING ARCADE</div>
+    <div class="player">PLAYER: <span id="playerName">Guest</span></div>
+</header>
+
+<section class="hero">
+    <div class="leaves">🍂 🍁 🍂 🍁 🍂</div>
+    <h1>THANKSGIVING<br><span>ARCADE</span></h1>
+    <p>Welcome to the ultimate Thanksgiving gaming experience!</p>
+    <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">PLAY NOW ↓</button>
+</section>
+
+<section class="games" id="games">
+    <h2>🎮 CHOOSE YOUR GAME</h2>
+
+    <div class="game-grid">
+
+        <div class="game-card">
+            <div class="game-icon">🦃</div>
+            <h3>Turkey Escape</h3>
+            <p>Help the turkey escape! Jump over obstacles and survive.</p>
+            <button onclick="startTurkey()">PLAY GAME</button>
+        </div>
+
+        <div class="game-card">
+            <div class="game-icon">🍗</div>
+            <h3>Catch the Food</h3>
+            <p>Catch falling Thanksgiving food and collect points!</p>
+            <button onclick="startFood()">PLAY GAME</button>
+        </div>
+
+        <div class="game-card">
+            <div class="game-icon">🍂</div>
+            <h3>Thanksgiving Trivia</h3>
+            <p>Test your Thanksgiving knowledge with 10 questions.</p>
+            <button onclick="startTrivia()">PLAY GAME</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="game-area" id="gameArea">
+    <h2 id="gameTitle">GAME</h2>
+    <div id="gameContent"></div>
+    <button class="back-button" onclick="goHome()">← BACK TO ARCADE</button>
+</section>
+
+<footer>
+    <p>🦃 THANKSGIVING ARCADE © 2026</p>
+    <p>Made with 🍂 and JavaScript</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/turkey-escape.js"></script>
+<script src="js/catch-food.js"></script>
+<script src="js/trivia.js"></script>
+</body>
+</html>
